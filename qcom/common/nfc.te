@@ -1,0 +1,2 @@
+qmux_socket(nfc);
+allow nfc self:socket create_socket_perms;
