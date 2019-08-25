@@ -17,6 +17,9 @@
 # This file includes all definitions that apply to ALL Pantech msm8960 devices, and
 # are also specific to msm8960 devices
 
+# This file includes all definitions that apply to ALL Pantech msm8960 devices, and
+# are also specific to msm8960 devices
+
 $(call inherit-product, vendor/pantech/msm8960-common/msm8960-common-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay

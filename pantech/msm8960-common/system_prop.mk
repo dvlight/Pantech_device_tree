@@ -7,7 +7,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IO Scheduler
 PRODUCT_PROPERTY_OVERRIDES += \
-	sys.io.scheduler=noop
+	sys.io.scheduler=cfq
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \

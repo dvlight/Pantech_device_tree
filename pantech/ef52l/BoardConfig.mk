@@ -39,12 +39,11 @@ TARGET_PROVIDES_LIBLIGHT 			:= true
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/pantech/ef52l/bluetooth
 
-#Sensor
+# Sensor
 EF52_USE_KITKAT_SENSORS := yes
 
-#TWRP screen config
+# TWRP screen config
 DEVICE_RESOLUTION := 720x1280
 
+# custom audio policy
 USE_CUSTOM_AUDIO_POLICY := 0
-
-TARGET_PROVIDES_INIT_RC := true

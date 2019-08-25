@@ -3,13 +3,7 @@ TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 720
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/ota.mk)
-$(call inherit-product, vendor/aosp/config/aex_props.mk)
-$(call inherit-product, vendor/aosp/config/BoardConfigCM.mk)
-$(call inherit-product, vendor/aosp/config/bootanimation.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aosp/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/pantech/ef52l/aosp_ef52l.mk)

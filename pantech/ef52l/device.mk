@@ -16,7 +16,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product, vendor/pantech/ef52l/ef52l-vendor.mk)
+
 
 DEVICE_PACKAGE_OVERLAYS += device/pantech/ef52l/overlay
 
