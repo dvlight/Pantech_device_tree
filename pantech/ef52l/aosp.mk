@@ -3,7 +3,7 @@ TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 720
 
 # Inherit some common AOSP stuff.
-
+$(call inherit-product, vendor/aosp/config/commom.mk
 
 # Inherit device configuration
 $(call inherit-product, device/pantech/ef52l/aosp_ef52l.mk)
@@ -15,11 +15,9 @@ PRODUCT_BRAND := VEGA
 PRODUCT_MODEL := Vega Iron
 PRODUCT_MANUFACTURER := Pantech
 
-# Set build fingerprint / ID / Product Name ect.
 #PRODUCT_BUILD_PROP_OVERRIDES += \
 #    PRODUCT_NAME="Vega Iron" \
 #    TARGET_DEVICE=ef52l \
-
 
 # Enable Torch
 #PRODUCT_PACKAGES += Torch
