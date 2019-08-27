@@ -24,6 +24,8 @@
 //#define LOG_NDEBUG 0
 
 #define LOG_TAG "CameraWrapper"
+#define KEY_QC_SUPPORTED_ISO_MODES "iso-values"
+#define KEY_QC_ISO_MODE "iso"
 #include <cutils/log.h>
 
 #include <utils/threads.h>
