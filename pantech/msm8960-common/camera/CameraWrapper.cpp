@@ -41,6 +41,13 @@ static int camera_device_open(const hw_module_t *module, const char *name,
 static int camera_get_number_of_cameras(void);
 static int camera_get_camera_info(int camera_id, struct camera_info *info);
 
+const char KEY_QC_AE_BRACKET_HDR[] = "ae-bracket-hdr";
+const char KEY_QC_CAPTURE_BURST_EXPOSURE[] = "capture-burst-exposures";
+const char KEY_QC_MORPHO_HDR[] = "morpho-hdr";
+const char KEY_QC_ZSL[] = "zsl";
+const char FOCUS_MODE_MANUAL_POSITION[] = "manual";
+const char WHITE_BALANCE_MANUAL_CCT[] = "manual-cct";
+
 static struct hw_module_methods_t camera_module_methods = {
     open: camera_device_open
 };
