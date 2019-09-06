@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2011 The Android Open-Source Project
+# Copyright (C) 2019 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -60,7 +60,6 @@ PRODUCT_COPY_FILES += \
 	#device/pantech/ef52l/keylayout/stmicro_fts_ts.kl:system/usr/keylayout/stmicro_fts_ts.kl \
 	#device/pantech/ef52l/keylayout/atmel_mxt_540s.kl:system/usr/keylayout/atmel_mxt_540s.kl \
 
-
 # keychars
 PRODUCT_COPY_FILES += \
 	device/pantech/ef52l/keychars/Generic.kcm:system/usr/keychars/Generic.kcm \
@@ -109,5 +108,5 @@ endif
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
-# Inherit from msm8974-common
+# Inherit from msm8960-common
 $(call inherit-product, device/pantech/msm8960-common/msm8960.mk)
