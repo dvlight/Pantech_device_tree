@@ -47,3 +47,6 @@ DEVICE_RESOLUTION := 720x1280
 
 # custom audio policy
 USE_CUSTOM_AUDIO_POLICY := 0
+
+# init.rc
+TARGET_PROVIDES_INIT_RC := true
