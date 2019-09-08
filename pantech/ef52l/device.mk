@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+$(call inherit-product, device/pantech/ef52l/aosp.mk
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product, vendor/pantech/ef52l/ef52l-vendor.mk)
@@ -23,6 +25,10 @@ DEVICE_PACKAGE_OVERLAYS += device/pantech/ef52l/overlay
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
+# Root files
+PRODUCT_PACKAGES += \
+	initlogo.rle
 
 # Camera
 #PRODUCT_PACKAGES += \
