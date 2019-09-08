@@ -25,6 +25,5 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# Domain type used for debugfs access
-# (moved to system/sepolicy)
-# attribute qti_debugfs_domain;
+#Domain type used for debugfs access by QCOM
+attribute qti_debugfs_domain;
