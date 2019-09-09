@@ -105,8 +105,8 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 #Ril class
 BOARD_RIL_CLASS := ../../../device/pantech/msm8960-common/ril/
 
-#Use cyanogenmod hardware
-BOARD_USES_CYANOGEN_HARDWARE := true
+#Use aosp hardware
+BOARD_USES_AOSP_HARDWARE := true
 
 #Preload Boot Animation
 TARGET_BOOTANIMATION_PRELOAD 		:= true
@@ -118,7 +118,6 @@ TARGET_PROVIDES_GPS_LOC_API := true
 
 # PowerHAL
 TARGET_POWERHAL_VARIANT			:= qcom
-#CM_POWERHAL_EXTENSION			:= lehoang
 
 
 # Enable dex-preoptimization to speed up first boot sequence
@@ -132,7 +131,7 @@ endif
 DONT_DEXPREOPT_PREBUILTS := true
 
 # Init
-TARGET_NO_INITLOGO := true
+TARGET_NO_INITLOGO := false
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND 		:= true
@@ -169,8 +168,9 @@ PRODUCT_PREBUILT_WEBVIEWCHROMIUM 	:= yes
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT 			:= true
 
-# qcom sepolicy
-include device/qcom/sepolicy.mk
+# qcom sepolicy, common device source
+include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/common/Android.mk
 
 #BOARD_SEPOLICY_DIRS += \
        device/pantech/msm8960-common/sepolicy
