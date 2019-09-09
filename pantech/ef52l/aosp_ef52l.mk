@@ -20,9 +20,6 @@ PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/commom.mk
-
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/pantech/ef52l/device.mk)
 
