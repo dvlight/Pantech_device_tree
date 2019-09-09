@@ -19,6 +19,12 @@
 
 -include device/qcom/sepolicy/sepolicy.mk
 
+-include device/qcom/common/sepolicy.mk
+
+# Inherit some common AOSP stuff.
+-include vendor/aosp/config/commom.mk
+-include vendor/aosp/config/bootanimation.mk
+
 # inherit from the proprietary version
 -include vendor/pantech/ef52l/BoardConfigVendor.mk
 
