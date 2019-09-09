@@ -18,11 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product, vendor/pantech/ef52l/ef52l-vendor.mk)
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/pantech/ef52l/zImage
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+TARGET_PREBUILT_KERNEL=device/pantech/ef52l/zImage
 
 DEVICE_PACKAGE_OVERLAYS += device/pantech/ef52l/overlay
 
