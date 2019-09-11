@@ -1,4 +1,4 @@
 Generic common qcom configuration tools
 ===============================
 
-Copyright 2019 - The Android Open Source Project
+Copyright 2014 - The CyanogenMod Project

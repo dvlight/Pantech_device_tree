@@ -6,6 +6,3 @@ dontaudit domain kernel:system module_request;
 
 # Allow all domains read access to sysfs_thermal
 r_dir_file(domain, sysfs_thermal);
-
-neverallow { domain -init -system_server -dumpstate userdebug_or_eng(`-qti_debugfs_domain')} debugfs:file no_rw_file_perms;
-appdomain -shell userdebug_or_eng(`-su -qti-testscripts')
