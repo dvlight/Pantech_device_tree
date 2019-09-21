@@ -99,22 +99,6 @@ LOCAL_SRC_FILES    := etc/initlogo.rle
 LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE       := battery_scale.png
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := etc/res/images/charger/battery_scale.png
-LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)/res/images/charger
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := battery_fail.png
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := etc/res/images/charger/battery_fail.png
-LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)/res/images/charger
-include $(BUILD_PREBUILT)
-
 #Camera firmware
 
 include $(CLEAR_VARS)

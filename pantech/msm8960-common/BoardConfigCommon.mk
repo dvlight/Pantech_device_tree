@@ -169,8 +169,7 @@ PRODUCT_PREBUILT_WEBVIEWCHROMIUM 	:= yes
 EXTENDED_FONT_FOOTPRINT 			:= true
 
 # qcom sepolicy, common device source
-include device/qcom/sepolicy/sepolicy.mk
-include device/qcom/common/Android.mk
+
 
 #BOARD_SEPOLICY_DIRS += \
        device/pantech/msm8960-common/sepolicy
