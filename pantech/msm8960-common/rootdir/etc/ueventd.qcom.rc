@@ -188,13 +188,3 @@
 /dev/uio0                 0660   system     system
 /dev/uio1                 0660   system     system
 /dev/uio2                 0660   system     system
-# pantech usb
-/dev/obex                 0660   system     system
-# TDMB device
-/dev/tdmb                 0660   media     media
-
-#NFC device
-/dev/pn54*                0600   nfc        nfc
-
-# FEATURE_PANTECH_SND_QSOUND
-/dev/pantech_aud_ctl*     0770   system     audio

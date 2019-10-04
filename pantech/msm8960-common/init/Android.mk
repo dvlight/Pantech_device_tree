@@ -24,4 +24,3 @@ LOCAL_SRC_FILES := init_pantech.cpp
 LOCAL_MODULE := libinit_pantech
 
 include $(BUILD_STATIC_LIBRARY)
-# Add by Le Hoang to build as standalone lib.
