@@ -162,5 +162,3 @@ allow system_server persist_alarm_file:file { rw_file_perms create };
 userdebug_or_eng(`
   diag_use(system_server)
 ')
-# Allow system server to change hw button properties
-allow system_server qemu_hw_mainkeys_prop:property_service set;
