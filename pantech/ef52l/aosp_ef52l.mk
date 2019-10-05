@@ -34,7 +34,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 DEFAULT_ROOT_METHOD := magisk
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 720
 
 #For some makefile on first run
