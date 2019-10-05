@@ -90,13 +90,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=300
 
 #Copy kernel header if using prebuilt kernel
-#ifneq ($(OUT),)
-#$(call inherit-product, vendor/pantech/ef52l/prebuilt_module.mk)
-#$(shell rm -rf $(OUT)/obj/KERNEL_OBJ;\
-#    mkdir -p $(OUT)/obj;\
-#    ln -s $(ANDROID_BUILD_TOP)/device/pantech/ef52l/include/KERNEL_OBJ $(OUT)/obj/KERNEL_OBJ)
-#endif
+ifneq ($(OUT),)
+$(shell rm -rf $(OUT)/obj/KERNEL_OBJ;\
+    mkdir -p $(OUT)/obj;\
+    ln -s $(ANDROID_BUILD_TOP)/device/pantech/ef52l/include/KERNEL_OBJ $(OUT)/obj/KERNEL_OBJ)
+endif
 
+HAS_PREBUILT_KERNEL := true
 #Product info
 ifdef AOSP_ROM
 PRODUCT_PROPERTY_OVERRIDES += \
