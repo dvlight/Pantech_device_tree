@@ -33,8 +33,8 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_OTA_ASSERT_DEVICE := ef52l,ef52s,ef52k
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/ef52
-TARGET_KERNEL_CONFIG := cm_ef52_defconfig
+TARGET_KERNEL_SOURCE := kernel/msm8960
+TARGET_KERNEL_CONFIG := Hiru_ef52_defconfig
 
 # Platform
 BOARD_VENDOR_PLATFORM := pantech-msm8960
