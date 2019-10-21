@@ -2,17 +2,17 @@
 #<src>                                         <mnt_point>  <type>  <mnt_flags and options>  <fs_mgr_flags>
 # The filesystem that contains the filesystem checker binary (typically /system) cannot
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
-# <src>                                         <mnt_point>  <type>  <mnt_flags and options>             															<fs_mgr_flags>
-/dev/block/platform/msm_sdcc.1/by-name/system     /system	  ext4    ro,barrier=0,noatime,nodiratime																	wait
+# <src>                                         <mnt_point> 	 <type>  <mnt_flags and options>             											<fs_mgr_flags>
+/dev/block/platform/msm_sdcc.1/by-name/system     /system	  ext4    ro,barrier=0,noatime,nodiratime											wait
 /dev/block/platform/msm_sdcc.1/by-name/persist    /persist	  ext4    nosuid,nodev,barrier=1,data=ordered,nodelalloc,nomblk_io_submit,errors=panic						wait
-/dev/block/platform/msm_sdcc.1/by-name/userdata   /data		  ext4    nosuid,nodev,barrier=0,noauto_da_alloc,noatime,nodiratime											wait,check,encryptable=/persist/metadata,length=-16384
-/dev/block/platform/msm_sdcc.1/by-name/cache      /cache	  ext4    nosuid,nodev,barrier=0,noatime,nodiratime															wait,check
-/dev/block/platform/msm_sdcc.1/by-name/modem      /firmware   vfat    ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0		wait
+/dev/block/platform/msm_sdcc.1/by-name/userdata   /data		  ext4    nosuid,nodev,barrier=0,noauto_da_alloc,noatime,nodiratime								wait,check,encryptable=/persist/metadata,length=-16384
+/dev/block/platform/msm_sdcc.1/by-name/cache      /cache	  ext4    nosuid,nodev,barrier=0,noatime,nodiratime										wait,check
+/dev/block/platform/msm_sdcc.1/by-name/modem      /firmware 	  vfat    ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0				wait
 
 # Boot partitions
-/dev/block/platform/msm_sdcc.1/by-name/boot		  /boot		  emmc    defaults																							recoveryonly
-/dev/block/platform/msm_sdcc.1/by-name/recovery   /recovery   emmc    defaults																							recoveryonly
+/dev/block/platform/msm_sdcc.1/by-name/boot	  /boot		  emmc    defaults														recoveryonly
+/dev/block/platform/msm_sdcc.1/by-name/recovery   /recovery 	  emmc    defaults														recoveryonly
 
 # VOLD
-/devices/platform/msm_sdcc.3/mmc_host*			  auto 		  auto    defaults																							voldmanaged=external_sd:auto,encryptable=userdata
-/devices/platform/msm_hsusb_host/usb*			  auto		  auto	  defaults																							voldmanaged=usb:auto
+/devices/platform/msm_sdcc.3/mmc_host*		auto 		  auto    defaults														voldmanaged=external_sd:auto,encryptable=userdata
+/devices/platform/msm_hsusb_host/usb*		auto		  auto	  defaults														voldmanaged=usb:auto
