@@ -1,5 +1,5 @@
 on early-init
-    write /sys/block/mmcblk0/bdi/read_ahead_kb 512
+    write /sys/block/mmcblk0/bdi/read_ahead_kb 128
 
 on enable-low-power
     # Enable Power modes and set the CPU Freq Sampling rates
