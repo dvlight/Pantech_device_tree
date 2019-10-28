@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-
-<project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="cm-14.1"/>
- <!--<project path="packages/apps/FastPowerOn" name="platform/packages/apps/FastPowerOn" remote="caf" revision="LA.BR.1.2.1_rb1.18" groups="caf-app"/>
- <project path="packages/apps/SnapdragonCamera" name="platform/packages/apps/SnapdragonCamera" remote="caf" revision="LA.AF.1.1_rb1.18" groups="caf-app"/>-->
-</manifest>
