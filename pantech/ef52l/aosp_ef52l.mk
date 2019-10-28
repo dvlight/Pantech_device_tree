@@ -37,3 +37,9 @@ TARGET_DEVICE := $(PRODUCT_DEVICE)
 # specify phone type - needed by 2G toggle
 PRODUCT_PROPERTY_OVERRIDES += \
     gsm.current.phone-type=1
+
+# release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="ef52l-user 4.1.2 JZ054K IM-A870L.003 release-keys" 
+
+BUILD_FINGERPRINT := VEGA/VEGA_IM-A870L/ef52l:4.1.2/JZO54K/IM-A870L.003:user/release-keys
