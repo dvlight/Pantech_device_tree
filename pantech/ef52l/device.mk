@@ -68,7 +68,7 @@ PRODUCT_COPY_FILES += \
 	device/pantech/ef52l/keychars/Generic.kcm:system/usr/keychars/Generic.kcm \
 	device/pantech/ef52l/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
 	device/pantech/ef52l/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
-	device/pantech/ef52l/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm \
+	device/pantech/ef52l/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm
 
 # idc
 PRODUCT_COPY_FILES += \
