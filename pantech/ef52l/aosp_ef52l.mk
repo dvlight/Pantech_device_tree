@@ -31,9 +31,6 @@ TARGET_VENDOR := Pantech
 TARGET_VENDOR_PRODUCT_NAME := ef52l
 TARGET_VENDOR_DEVICE_NAME := ef52l
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 720
-
 #For some makefile on first run
 TARGET_DEVICE := $(PRODUCT_DEVICE)
 
