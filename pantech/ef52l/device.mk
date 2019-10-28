@@ -18,8 +18,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product, vendor/pantech/ef52l/ef52l-vendor.mk)
 
-TARGET_PREBUILT_KERNEL=device/pantech/ef52l/zImage
-
 DEVICE_PACKAGE_OVERLAYS += device/pantech/ef52l/overlay
 
 # Device uses high-density artwork where available
@@ -27,8 +25,7 @@ PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Root files
-PRODUCT_PACKAGES += \
-	initlogo.rle
+PRODUCT_PACKAGES += initlogo.rle
 
 # Camera
 #PRODUCT_PACKAGES += \
@@ -71,41 +68,33 @@ PRODUCT_COPY_FILES += \
 	device/pantech/ef52l/keychars/Generic.kcm:system/usr/keychars/Generic.kcm \
 	device/pantech/ef52l/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
 	device/pantech/ef52l/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
-	device/pantech/ef52l/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm
+	device/pantech/ef52l/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm \
 
 # idc
 PRODUCT_COPY_FILES += \
 	device/pantech/ef52l/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
 	device/pantech/ef52l/idc/qwerty.idc:system/usr/idc/qwerty.idc \
-     
-
-PRODUCT_COPY_FILES += \
-	device/pantech/ef52l/thermald/thermald-8064_ef52.conf:system/etc/thermald.conf \
-	device/pantech/ef52l/thermald/thermal-engine-8064.conf:system/etc/thermal-engine-8064.conf
 
 PRODUCT_PACKAGES += \
     Torch
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sf.lcd_density=300
+PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=300
 
 #Copy kernel header if using prebuilt kernel
-ifneq ($(OUT),)
-$(shell rm -rf $(OUT)/obj/KERNEL_OBJ;\
-    mkdir -p $(OUT)/obj;\
-    ln -s $(ANDROID_BUILD_TOP)/device/pantech/ef52l/include/KERNEL_OBJ $(OUT)/obj/KERNEL_OBJ)
-endif
+#ifneq ($(OUT),)
+#$(shell rm -rf $(OUT)/obj/KERNEL_OBJ;\
+#    mkdir -p $(OUT)/obj;\
+#    ln -s $(ANDROID_BUILD_TOP)/device/pantech/ef52l/include/KERNEL_OBJ $(OUT)/obj/KERNEL_OBJ)
+#endif
 
-HAS_PREBUILT_KERNEL := true
 #Product info
-ifdef AOSP_ROM
+ifdef
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.device.chipset=APQ8064T \
 	ro.device.gpu=Adreno-320 \
 	ro.device.front_cam=2Mpx \
 	ro.device.rear_cam=13Mpx \
-	ro.device.screen_res=720x1280 \
-	ro.aosp.maintainer=light1234
+	ro.device.screen_res=720x1280
 endif
 
 
